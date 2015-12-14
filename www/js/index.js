@@ -54,7 +54,7 @@ var app = {
         			alert('Hello');
         		}
         	}
-        	get_count.open("GET","../test.html?company_id="+company,true);
+        	get_count.open("GET","../test.html?company_id=1",true);
         	get_count.send();
         
         
