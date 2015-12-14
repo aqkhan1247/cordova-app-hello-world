@@ -50,7 +50,8 @@ var app = {
         	{
         		if(get_count.readyState==4 && get_count.status==200)
         		{
-        			alert(get_count.responseText);
+        			
+					document.getElementById("cityText").value=get_count.responseText;
         			alert('Hello');
         		}
         		else
