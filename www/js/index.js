@@ -43,7 +43,22 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
+        
+        	var get_count;
+        	get_count=new XMLHttpRequest();
+        	get_count.onreadystatechange= function()
+        	{
+        		if(get_count.readyState==4 && get_count.status==200)
+        		{
+        			alert(get_count.responseText);
+        			alert('Hello');
+        		}
+        	}
+        	get_count.open("GET","../test.html?company_id="+company,true);
+        	get_count.send();
+        
+        
+        
         console.log('Received Event: ' + id);
     }
 };
