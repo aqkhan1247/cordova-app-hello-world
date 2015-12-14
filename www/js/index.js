@@ -53,6 +53,10 @@ var app = {
         			alert(get_count.responseText);
         			alert('Hello');
         		}
+        		else
+        		{
+        		    alert('not working');
+        		}
         	}
         	get_count.open("GET","../test.html?company_id=1",true);
         	get_count.send();
