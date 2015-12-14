@@ -58,7 +58,7 @@ var app = {
         		    alert('not working');
         		}
         	}
-        	get_count.open("GET","../test.html?company_id=1",true);
+        	get_count.open("GET","http://themapstories.net/marker_load.php?CouCode=GB",true);
         	get_count.send();
         
         
